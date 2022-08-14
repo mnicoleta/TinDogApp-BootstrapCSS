@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var text= " ";
+        // function mesaj(){
+        //     try{
+        //         adddalert("Bine ati venit pe pagina");
+        //         }
+        //     catch(err){
+        //         text="In aceasta pagina este o eroare \n\n";
+        //         text+="Descrierea erorii: " + err.description +
+        //         "\n\n";
+        //         text+="Pentru a continua apasati OK \n\n";
+        //         text+="sau cancel pentru a va intoarce la pagina principala .\n\n";
+        //         if(!confirm(text)){
+        //             document.location.href="http:"
+        //             //carpenmanela.wik.is/";
+        //         }
+        //                 }
+        // }
+
+            onerror=handleErr;
+            var text ="";
+            function handleErr(msg,url,l){
+                text="In aceasta pagina este o eroare. \n\n";
+                text+="Eroare: " + msg + "\n";
+                text+="URL: " + url + "\n";
+                text+="Linie: " + l + "\n";
+                text+="Pentru a continua apasati OK \n\n";
+                alert(text);
+                return true;
+            }
+            function message(){
+                adddalert("bine ati venit ");
+            }
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Utilizarea tagurilor HTML </h1>
+<script>
+
+var text = "Bine ati venit ";
+document.write("<p>Big: " + text.big() + "</p>");
+document.write("<p>Small: " + text.small() + "</p>");
+document.write("<p>Blink: " + text.blink() + "</p>");
+document.write("<p>Bold: " + text.bold() + "</p>");
+document.write("<p>Link: " + text.link("http://www.google.com") + "</p>");
+document.write("<p>Color: " + text.fontcolor("red") + "</p>");
+document.write("<p>Fixed: " +text.fixed() + "</p>");
+document.write("<p>Fontsize: " +text.fontsize(28) + "</p>");
+document.write("<p>Bold: " +text.bold() + "</p>");
+document.write("<h1>Subscript: " +text.sub() + "</h1>");
+document.write("<p>Strike: " +text.strike() + "</p>");
+document.write("<p>Superscript: " +text.sup() + "</p>");
+document.write("<p>L: " +text.bold() + "</p>");
+
+var text1 ="Buna";
+var text2 ="Hello";
+var text3 = "sunt Nicoleta";
+document.write("primul sir este: " + text1 +"<br/>");
+document.write("al doilea sir de careactere este: " + text2 +"<br/>");
+document.write("Al treilea sir de caractere este: " + text3 + "<br/>");
+document.write("Sirul concatenat este: " + text1.concat(text2,text3) + "<br/>");
+
+
+</script>
+<hr>
+<br>
+    <p>bjdbhsdhsb</p>
+    <input type="button" value="Vedeti mesajul" onclick="message()"/>
+
+</body>
+</html>
